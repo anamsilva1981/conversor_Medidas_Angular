@@ -8,19 +8,23 @@ import { AngularMaterialModule } from './angular-material/angular-material/angul
 import { UnitSelectionComponent } from './unit-selection/unit-selection.component';
 import { ConversorComponent } from './conversor/conversor.component';
 import { ValueInputComponent } from './conversor/value-input/value-input.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     UnitSelectionComponent,
     ConversorComponent,
-    ValueInputComponent
+    ValueInputComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    AngularMaterialModule
+    AngularMaterialModule,
+    ReactiveFormsModule,
+    FormsModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
