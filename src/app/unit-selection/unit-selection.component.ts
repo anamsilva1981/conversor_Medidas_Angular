@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-unit-selection',
@@ -24,16 +25,19 @@ export class UnitSelectionComponent implements OnInit {
   valorTempDe: string = '';
   valorTempPara: string = '';
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
 
-  enviaParams(){
-    console.log(
+  enviaTempParams(){
+    this.router.navigate([
+      '/conversor',
       this.valorTempDe,
       this.valorTempPara,
-    )
+    ]);
+  
+    
   }
 
 }

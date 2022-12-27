@@ -9,9 +9,17 @@
 6. Fazer o roteamento via `src/app/app-routing.module.ts`
 7. Instalar bootstrap via install e colar o link no `angular.json`
 8. Colocar o roteamento `<router-outlet></router-outlet>` na pagina `app.module.ts`
-9. 
-src/app/unit-selection/unit-selection.component.html
+9. src/app/unit-selection/unit-selection.component.html
+10. src/app/unit-selection/unit-selection.component.ts
+11. src/app/app.module.ts ` importacao`
 
+
+### 27/12/2022 ###
+
+
+src/app/app-routing.module.ts
+
+// envia 
 src/app/unit-selection/unit-selection.component.ts
 
-src/app/app.module.ts ` importacao`
+// reveber
