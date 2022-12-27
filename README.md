@@ -17,9 +17,6 @@
 ### 27/12/2022 ###
 
 
-src/app/app-routing.module.ts
-
-// envia 
-src/app/unit-selection/unit-selection.component.ts
-
-// reveber
+1. src/app/app-routing.module.ts
+2. src/app/unit-selection/unit-selection.component.ts `envia`
+3. src/app/conversor/conversor.component.ts
