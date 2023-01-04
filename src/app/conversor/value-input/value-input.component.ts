@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
+import { Medida } from 'src/app/models/medida.interface';
 
 @Component({
   selector: 'app-value-input',
@@ -7,9 +9,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ValueInputComponent implements OnInit {
 
+  medidaTipo: string = '';
+  medidaValor!: number;
+
+  @Input() medida!: Medida;
+
+  valorInputForm = new FormGroup({
+    valueInput: new FormControl([]),
+  });
+
   constructor() { }
 
   ngOnInit(): void {
+    this.medidaTipo = this.medida.tipo;
+    this.medidaValor = this.medida.valor;
   }
+
+
 
 }

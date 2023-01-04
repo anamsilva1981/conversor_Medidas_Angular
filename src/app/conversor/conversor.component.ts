@@ -1,10 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Medida } from '../models/medida.interface';
 
-interface Medida {
-  tipo: string;
-  valor: number;
-}
 @Component({
   selector: 'app-conversor',
   templateUrl: './conversor.component.html',
